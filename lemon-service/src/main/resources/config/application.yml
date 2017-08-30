@@ -1,0 +1,27 @@
+#服务器HTTP端口
+server:
+  port : 8081
+  session-timeout: 30
+    
+# mysql
+spring:
+    # 环境 dev|test|pro
+    profiles:
+        active: dev
+    # jackson时间格式化
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    http:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+            enabled: true
+    
+#mybatis配置
+mybatis:
+  typeAliasesPackage: com.lemon.common.model
+  mapperLocations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    

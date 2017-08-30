@@ -15,7 +15,13 @@
   </properties>
   
   <dependencies>
+  	<dependency>
+		<groupId>com.lemon</groupId>
+		<artifactId>lemon-common</artifactId>
+		<version>${lemon-version}</version>
+	</dependency>
   </dependencies>
+  
   
   <build>
     <finalName>lemon-web</finalName>
