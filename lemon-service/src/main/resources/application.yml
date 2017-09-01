@@ -15,6 +15,12 @@ spring:
     # 环境 dev|test|pro
     profiles:
         active: dev
+    #activemq
+    activemq:
+      broker-url: tcp://localhost:61616
+      in-memory: true
+      pool:
+        enabled: false
 
 #mybatis配置
 mybatis:
