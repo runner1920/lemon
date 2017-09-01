@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.lemon.common.model.UserDO;
 import com.lemon.common.service.LogService;
 import com.lemon.common.service.UserService;
 
@@ -24,6 +25,9 @@ public class HelloController {
 	
 	@RequestMapping("/sys")
 	public String sys() {
+		UserDO user = new UserDO();
+		user.setUsername("test3");
+		userService.save(user);
 		return userService.testDubbo()+logService.testDubbo();
 	}
 }

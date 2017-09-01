@@ -14,6 +14,7 @@ public class LogServiceImpl implements LogService {
 
 	@Override
 	public String testDubbo() {
+//		System.out.println(1/0);
 		return "sys success";
 	}
 	

@@ -1,0 +1,22 @@
+#tomcat
+server:
+  port: 8082
+
+#dubbo配置
+dubbo:
+  registry:
+    address: 127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 30001
+    
+# mysql
+spring:
+    # 环境 dev|test|pro
+    profiles:
+        active: dev
+
+#mybatis配置
+mybatis:
+  config-locations: classpath:mybatis-config.xml
+  mapperLocations: classpath:mapper/*.xml

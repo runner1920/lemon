@@ -1,5 +1,7 @@
 package com.lemon.common.service;
 
+import com.lemon.common.model.UserDO;
+
 /**
  * 
  * @author jiangqk
@@ -8,4 +10,6 @@ package com.lemon.common.service;
 public interface UserService {
 	
 	String testDubbo();
+	
+	void save(UserDO user);
 }
