@@ -1,0 +1,11 @@
+#服务器HTTP端口
+server:
+  port : 8083
+  session-timeout: 30
+  
+#dubbo配置
+dubbo:
+  application:
+    name: consumer
+  registry:
+    address: 127.0.0.1:2181

@@ -22,14 +22,27 @@
 	</dependency>
 	
 	<dependency>
-	    <groupId>org.mybatis.spring.boot</groupId>
-	    <artifactId>mybatis-spring-boot-starter</artifactId>
-	    <version>${mybatis.spring.boot.version}</version>
+		 <groupId>com.alibaba</groupId>  
+         <artifactId>dubbo</artifactId>
 	</dependency>
+	
+	<dependency>  
+        <groupId>org.apache.zookeeper</groupId>  
+        <artifactId>zookeeper</artifactId>  
+    </dependency>  
+    <dependency>  
+        <groupId>com.github.sgroschupf</groupId>  
+        <artifactId>zkclient</artifactId>  
+    </dependency>
   </dependencies>
   
   <build>
-    <finalName>lemon-service</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
   </build>
   
 </project>

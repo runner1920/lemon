@@ -11,14 +11,35 @@
   <packaging>war</packaging>
   
   <dependencies>
+  
   	<dependency>
 		<groupId>com.lemon</groupId>
 		<artifactId>lemon-common</artifactId>
 		<version>${lemon-version}</version>
 	</dependency>
+	
+	<dependency>
+		 <groupId>com.alibaba</groupId>  
+         <artifactId>dubbo</artifactId>
+	</dependency>
+	
+	<dependency>  
+        <groupId>org.apache.zookeeper</groupId>  
+        <artifactId>zookeeper</artifactId>  
+    </dependency>  
+    <dependency>  
+        <groupId>com.github.sgroschupf</groupId>  
+        <artifactId>zkclient</artifactId>  
+    </dependency>
+	
   </dependencies>
   
   <build>
-    <finalName>lemon-web</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
   </build>
 </project>
