@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.lemon.common.service.LogService;
 import com.lemon.common.service.UserService;
 
 /**
@@ -18,8 +19,11 @@ public class HelloController {
 	@Autowired
 	private UserService userService;
 	
+	@Autowired
+	private LogService logService;
+	
 	@RequestMapping("/sys")
 	public String sys() {
-		return userService.testDubbo();
+		return userService.testDubbo()+logService.testDubbo();
 	}
 }

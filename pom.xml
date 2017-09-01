@@ -102,6 +102,7 @@
     <module>lemon-api</module>
     <module>lemon-web</module>
     <module>lemon-service</module>
+    <module>lemon-sys</module>
   </modules>
   
 </project>

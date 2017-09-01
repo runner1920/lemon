@@ -15,4 +15,7 @@
    	<!-- 引用服务-->
     <dubbo:reference id="userService" interface="com.lemon.common.service.UserService"
      					check="false" registry="zookeeper" protocol="dubbo" timeout="15000"/>
+     					
+    <dubbo:reference id="logService" interface="com.lemon.common.service.LogService"
+     					check="false" registry="zookeeper" protocol="dubbo" timeout="15000"/>
 </beans>  
