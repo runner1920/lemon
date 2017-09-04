@@ -24,5 +24,13 @@ spring:
 
 #mybatis配置
 mybatis:
+  type-aliases-package: com.lemon.common.model
   config-locations: classpath:mybatis-config.xml
   mapperLocations: classpath:mapper/*.xml
+  
+#pagehelper
+pagehelper: 
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql

@@ -27,4 +27,8 @@
 		)
 	</insert>
 	
+	<select id="listAllUser" resultType="com.lemon.common.model.UserDO">
+		select * from sys_user
+	</select>
+	
 </mapper>

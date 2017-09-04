@@ -1,5 +1,7 @@
 package com.lemon.service.dao;
 
+import java.util.List;
+
 import com.lemon.common.model.UserDO;
 
 /**
@@ -10,4 +12,6 @@ import com.lemon.common.model.UserDO;
 public interface UserDao {
 	
 	public void save(UserDO user);
+	
+	public List<UserDO> listAllUser();
 }

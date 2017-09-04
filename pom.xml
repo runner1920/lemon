@@ -25,6 +25,7 @@
 	<dubbo.version>2.5.3</dubbo.version>
 	<zookeeper.version>3.4.6</zookeeper.version>  
     <zkclient.version>0.1</zkclient.version>
+    <pagehelper.spring.boot.version>1.2.0</pagehelper.spring.boot.version>
   </properties>
   
   <dependencies>
@@ -66,6 +67,12 @@
 		    <groupId>org.mybatis.spring.boot</groupId>
 		    <artifactId>mybatis-spring-boot-starter</artifactId>
 		    <version>${mybatis.spring.boot.version}</version>
+		</dependency>
+  	
+  		<dependency>
+		    <groupId>com.github.pagehelper</groupId>
+		    <artifactId>pagehelper-spring-boot-starter</artifactId>
+		    <version>${pagehelper.spring.boot.version}</version>
 		</dependency>
   		
 		<!-- druid阿里巴巴数据库连接池 -->

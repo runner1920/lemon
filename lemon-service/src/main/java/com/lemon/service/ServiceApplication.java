@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ImportResource({"classpath:dubbo.xml"})
-@MapperScan("com.lemon.service.dao")
+@MapperScan(basePackages="com.lemon.service.dao")
 public class ServiceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {

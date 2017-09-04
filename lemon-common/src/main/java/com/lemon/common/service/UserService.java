@@ -1,5 +1,6 @@
 package com.lemon.common.service;
 
+import com.github.pagehelper.PageInfo;
 import com.lemon.common.model.UserDO;
 
 /**
@@ -9,7 +10,7 @@ import com.lemon.common.model.UserDO;
  */
 public interface UserService {
 	
-	String testDubbo();
-	
 	void save(UserDO user);
+	
+	PageInfo<UserDO> listUser(int pageNum, int pageSize);
 }
