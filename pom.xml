@@ -26,6 +26,7 @@
 	<zookeeper.version>3.4.6</zookeeper.version>  
     <zkclient.version>0.1</zkclient.version>
     <pagehelper.spring.boot.version>1.2.0</pagehelper.spring.boot.version>
+    <joda.time.version>2.9.9</joda.time.version>
   </properties>
   
   <dependencies>
@@ -57,6 +58,12 @@
 		<groupId>com.alibaba</groupId>
 		<artifactId>fastjson</artifactId>
 		<version>${fastjson.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>joda-time</groupId>
+	    <artifactId>joda-time</artifactId>
+	    <version>${joda.time.version}</version>
 	</dependency>
 	
   </dependencies>
@@ -123,6 +130,7 @@
     <module>lemon-web</module>
     <module>lemon-service</module>
     <module>lemon-sys</module>
+    <module>lemon-task</module>
   </modules>
   
 </project>
