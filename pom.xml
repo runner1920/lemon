@@ -63,7 +63,6 @@
 	<dependency>
 	    <groupId>joda-time</groupId>
 	    <artifactId>joda-time</artifactId>
-	    <version>${joda.time.version}</version>
 	</dependency>
 	
   </dependencies>
@@ -131,6 +130,10 @@
     <module>lemon-service</module>
     <module>lemon-sys</module>
     <module>lemon-task</module>
+    <module>lemon-wechat</module>
+    <module>lemon-config</module>
+    <module>lemon-app</module>
+    <module>lemon-member</module>
   </modules>
   
 </project>

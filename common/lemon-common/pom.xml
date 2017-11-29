@@ -8,6 +8,7 @@
     <version>0.0.1</version>
   </parent>
   <artifactId>lemon-common</artifactId>
+  <description>公共模块，工具类，dbmodel等</description>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

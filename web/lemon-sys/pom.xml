@@ -9,6 +9,7 @@
   </parent>
   <artifactId>lemon-sys</artifactId>
   <packaging>war</packaging>
+  <description>后台管理系统</description>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
