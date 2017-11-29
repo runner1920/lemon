@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.lemon.common.model.sys.SysUser;
+import com.lemon.common.util.R;
 import com.lemon.sys.controller.AbstractController;
 import com.lemon.sys.service.SysUserService;
 
@@ -21,10 +22,10 @@ public class SysUserController extends AbstractController {
 	private SysUserService sysUserService;
 	
 	@RequestMapping("/hello")
-	public String helloWorld() {
+	public R helloWorld() {
 		SysUser user = new SysUser();
 		user.setUsername("admin");
 		sysUserService.save(user);
-		return "成功";
+		return R.ok();
 	}
 }
