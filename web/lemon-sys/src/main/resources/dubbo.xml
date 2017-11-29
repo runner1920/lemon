@@ -6,15 +6,4 @@
     http://code.alibabatech.com/schema/dubbo  
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">  
   
-    <!-- 提供方应用信息，用于计算依赖关系 -->  
-    <dubbo:application name="lemon-service" />  
-    
-    <!-- 注册中心服务地址 -->
-    <dubbo:registry id="zookeeper" protocol="zookeeper" address="${dubbo.registry.address}" />
-    
-    <!-- 用dubbo协议在30001 -->
-    <dubbo:protocol name="${dubbo.protocol.name}" port="${dubbo.protocol.port}" dispather="all" threadpool="cached" threads="5000"/>
-      
-    <dubbo:service interface="com.lemon.common.service.LogService" ref="logService" retries="0" timeout="6000"/>
-    
-</beans>  
+</beans>

@@ -22,6 +22,12 @@
 		<version>${lemon-version}</version>
 	</dependency>
 	
+	<dependency>
+		<groupId>com.lemon</groupId>
+		<artifactId>lemon-api</artifactId>
+		<version>${lemon-version}</version>
+	</dependency>
+	
 	<dependency>  
         <groupId>org.springframework.boot</groupId>  
         <artifactId>spring-boot-starter-activemq</artifactId>  

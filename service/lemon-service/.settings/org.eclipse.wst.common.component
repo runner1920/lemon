@@ -7,7 +7,10 @@
         <dependent-module archiveName="lemon-common-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lemon-common/lemon-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="java-output-path" value="/lemon-service/target/classes"/>
+        <dependent-module archiveName="lemon-api-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/lemon-api/lemon-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/lemon-order/target/classes"/>
         <property name="context-root" value="lemon-order"/>
     </wb-module>
 </project-modules>

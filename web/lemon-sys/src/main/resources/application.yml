@@ -1,0 +1,36 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8084
+    context-path: /lemon-sys
+
+# mysql
+spring:
+    # 环境 dev|test|pro
+    profiles:
+        active: dev
+    # jackson时间格式化
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    http:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+            enabled: true
+
+#Mybatis配置
+mybatis:
+  type-aliases-package: com.lemon.common.model.sys
+  configLocation: classpath:mybatis.xml
+  mapperLocations: classpath:mapper/*.xml
+  
+#pagehelper
+pagehelper: 
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
