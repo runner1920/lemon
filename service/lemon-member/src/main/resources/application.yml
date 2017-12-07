@@ -4,11 +4,14 @@ server:
         uri-encoding: UTF-8
         max-threads: 1000
         min-spare-threads: 30
-    port: 8083
-    context-path: /lemon-app
+    port: 8085
+    context-path: /lemon-member
 
 # mysql
 spring:
+    # 环境 dev|test|pro
+    profiles:
+        active: dev
     # jackson时间格式化
     jackson:
         time-zone: GMT+8
@@ -18,7 +21,22 @@ spring:
             max-file-size: 100MB
             max-request-size: 100MB
             enabled: true
-            
+    application:
+      name: lemon-member
+
+#Mybatis配置
+mybatis:
+  type-aliases-package: com.lemon.common.model.sys
+  configLocation: classpath:mybatis.xml
+  mapperLocations: classpath:mapper/*.xml
+  
+#pagehelper
+pagehelper: 
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  
 #SpringCloud配置
 eureka:
   client:

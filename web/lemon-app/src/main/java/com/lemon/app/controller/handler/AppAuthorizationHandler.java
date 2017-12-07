@@ -17,8 +17,9 @@ public class AppAuthorizationHandler implements HandlerInterceptor {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		//请求处理之前（Controller方法调用之前）
-		response.getWriter().write("sadf");
-		return false;
+//		response.getWriter().write("sadf");
+//		return false;
+		return true;
 	}
 
 	@Override

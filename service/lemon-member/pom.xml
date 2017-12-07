@@ -11,8 +11,12 @@
   <packaging>war</packaging>
   <description>用户管理</description>
   
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <dependencies>
-    <dependency>
+  	<dependency>
 		<groupId>com.lemon</groupId>
 		<artifactId>lemon-common</artifactId>
 		<version>${lemon-version}</version>
@@ -23,7 +27,12 @@
 		<artifactId>lemon-api</artifactId>
 		<version>${lemon-version}</version>
 	</dependency>
-    
+	
+	<dependency>  
+        <groupId>org.springframework.boot</groupId>  
+        <artifactId>spring-boot-starter-activemq</artifactId>  
+    </dependency> 
+	
     <dependency>
 	    <groupId>org.mybatis.spring.boot</groupId>
 	    <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -39,24 +48,10 @@
         <artifactId>druid</artifactId>
     </dependency>
     
-    <dependency>  
-        <groupId>org.springframework.boot</groupId>  
-        <artifactId>spring-boot-starter-activemq</artifactId>  
-    </dependency> 
-	
-	<dependency>
-		 <groupId>com.alibaba</groupId>  
-         <artifactId>dubbo</artifactId>
+    <dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-eureka-server</artifactId>
 	</dependency>
-	
-	<dependency>  
-        <groupId>org.apache.zookeeper</groupId>  
-        <artifactId>zookeeper</artifactId>  
-    </dependency>  
-    <dependency>  
-        <groupId>com.github.sgroschupf</groupId>  
-        <artifactId>zkclient</artifactId>  
-    </dependency>
     
   </dependencies>
   

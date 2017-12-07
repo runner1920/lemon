@@ -1,28 +1,28 @@
-package com.lemon.app.controller;
+package com.lemon.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * 
  * @author jiangqk
- * @data 2017年9月1日 上午11:32:12
+ * @data 2017年11月29日 下午4:30:14
  */
 @SpringBootApplication
-@EnableEurekaClient
-public class AppApplication extends SpringBootServletInitializer {
+@EnableEurekaServer
+public class MemberApplication extends SpringBootServletInitializer {
 	
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(AppApplication.class);
+		SpringApplication app = new SpringApplication(MemberApplication.class);
 		app.run(args);
 	}
 	
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-	    return application.sources(AppApplication.class);
+	    return application.sources(MemberApplication.class);
 	}
 	
 }
