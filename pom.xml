@@ -116,18 +116,4 @@
   	</dependencies>
   </dependencyManagement>
   
-  
-  <modules>
-    <module>lemon-api</module>
-    <module>lemon-web</module>
-    <module>lemon-service</module>
-    <module>lemon-sys</module>
-    <module>lemon-task</module>
-    <module>lemon-wechat</module>
-    <module>lemon-config</module>
-    <module>lemon-app</module>
-    <module>lemon-member</module>
-    <module>lemon-eureka</module>
-  </modules>
-  
 </project>

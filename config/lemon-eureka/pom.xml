@@ -8,7 +8,7 @@
     <version>0.0.1</version>
   </parent>
   <artifactId>lemon-eureka</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <description>springcloud注册中心</description>
   
   <dependencies>
