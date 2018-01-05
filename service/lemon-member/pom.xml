@@ -8,12 +8,8 @@
     <version>0.0.1</version>
   </parent>
   <artifactId>lemon-member</artifactId>
-  <packaging>war</packaging>
-  <description>用户管理</description>
-  
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+  <packaging>jar</packaging>
+  <description>用户相关功能</description>
   
   <dependencies>
   	<dependency>
@@ -28,10 +24,22 @@
 		<version>${lemon-version}</version>
 	</dependency>
 	
-	<dependency>  
-        <groupId>org.springframework.boot</groupId>  
-        <artifactId>spring-boot-starter-activemq</artifactId>  
-    </dependency> 
+	<dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-eureka</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-feign</artifactId>
+    </dependency>
 	
     <dependency>
 	    <groupId>org.mybatis.spring.boot</groupId>
@@ -47,11 +55,6 @@
         <groupId>com.alibaba</groupId>
         <artifactId>druid</artifactId>
     </dependency>
-    
-    <dependency>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-eureka-server</artifactId>
-	</dependency>
     
   </dependencies>
   

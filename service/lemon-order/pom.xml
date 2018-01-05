@@ -8,12 +8,8 @@
     <version>0.0.1</version>
   </parent>
   <artifactId>lemon-service</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <description>订单系统</description>
-  
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
   
   <dependencies>
   	<dependency>
@@ -27,11 +23,23 @@
 		<artifactId>lemon-api</artifactId>
 		<version>${lemon-version}</version>
 	</dependency>
-	
-	<dependency>  
-        <groupId>org.springframework.boot</groupId>  
-        <artifactId>spring-boot-starter-activemq</artifactId>  
-    </dependency> 
+    
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-eureka</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-feign</artifactId>
+    </dependency>
 	
     <dependency>
 	    <groupId>org.mybatis.spring.boot</groupId>

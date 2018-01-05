@@ -1,31 +1,33 @@
-#tomcat
+# Tomcat
 server:
-  port: 8082
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 1003
+    #context-path: /lemon-order
 
-#dubbo配置
-dubbo:
-  registry:
-    address: 127.0.0.1:2181
-  protocol:
-    name: dubbo
-    port: 30001
-    
 # mysql
 spring:
     # 环境 dev|test|pro
     profiles:
         active: dev
-    #activemq
-    activemq:
-      broker-url: tcp://localhost:61616
-      in-memory: true
-      pool:
-        enabled: false
+    # jackson时间格式化
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    http:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+            enabled: true
+    application:
+      name: lemon-order
 
-#mybatis配置
+#Mybatis配置
 mybatis:
   type-aliases-package: com.lemon.common.model
-  config-locations: classpath:mybatis-config.xml
+  configLocation: classpath:mybatis.xml
   mapperLocations: classpath:mapper/*.xml
   
 #pagehelper
@@ -34,3 +36,9 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+  
+#SpringCloud配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
