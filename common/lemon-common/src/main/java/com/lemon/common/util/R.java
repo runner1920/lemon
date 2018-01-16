@@ -3,6 +3,8 @@ package com.lemon.common.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.lemon.common.enums.RetEnum;
+
 /**
  * 
  * @author jiangqk
@@ -13,11 +15,12 @@ public class R extends HashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
 	
 	public R() {
-		put("code", 0);
+		put("code", RetEnum.RETURN_0.getCode());
+		put("msg", RetEnum.RETURN_0.getMsg());
 	}
 	
 	public static R error() {
-		return error(500, "未知异常，请联系管理员");
+		return error(RetEnum.RETURN_500.getCode(), RetEnum.RETURN_500.getMsg());
 	}
 	
 	public static R error(String msg) {

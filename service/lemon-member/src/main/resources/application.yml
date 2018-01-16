@@ -23,6 +23,16 @@ spring:
             enabled: true
     application:
       name: lemon-member
+    #邮件配置
+    mail:
+      host: smtp.163.com
+      username: runner1920@163.com  
+      password: jxl671768276
+      properties:  
+          mail:   
+              smtp:  
+                  auth: true  
+                  timeout: 25000 
 
 #Mybatis配置
 mybatis:
@@ -41,4 +51,7 @@ pagehelper:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1001/eureka/
+      defaultZone: http://lemon-eureka:1001/eureka/
+feign:
+  hystrix:
+    enabled: true

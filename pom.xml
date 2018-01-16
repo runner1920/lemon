@@ -116,4 +116,7 @@
   	</dependencies>
   </dependencyManagement>
   
+  <modules>
+    <module>lemon-product</module>
+  </modules>
 </project>

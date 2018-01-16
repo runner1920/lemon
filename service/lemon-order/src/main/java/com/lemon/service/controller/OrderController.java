@@ -17,7 +17,7 @@ public class OrderController {
     DiscoveryClient discoveryClient;
 	
 	@GetMapping("/order")
-	public String execute() {
+	public String execute() throws InterruptedException {
 		return discoveryClient.getServices().toString();
 	}
 	

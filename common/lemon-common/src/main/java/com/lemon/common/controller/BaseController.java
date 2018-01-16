@@ -1,6 +1,7 @@
 package com.lemon.common.controller;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 
@@ -12,6 +13,6 @@ public abstract class BaseController {
 	/**
 	 * 公共日志
 	 */
-	protected Logger logger = Logger.getLogger(getClass());
+	protected Logger logger = LoggerFactory.getLogger(getClass());
 	
 }
