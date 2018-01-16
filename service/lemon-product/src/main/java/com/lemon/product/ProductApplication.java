@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @data 2018年1月16日 下午3:58:02
  */
 @SpringBootApplication
-@ComponentScan(value="com.lemon")
+@ComponentScan(basePackages= {"com.lemon.common","com.lemon.product"})
 public class ProductApplication {
 	
 	public static void main(String[] args) {

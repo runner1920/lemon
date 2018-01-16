@@ -1,4 +1,4 @@
-package com.lemon.service;
+package com.lemon.order;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
