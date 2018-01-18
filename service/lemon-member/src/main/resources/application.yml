@@ -51,7 +51,7 @@ pagehelper:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://lemon-eureka:1001/eureka/
+      defaultZone: http://localhost:1001/eureka/
 feign:
   hystrix:
     enabled: true

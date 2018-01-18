@@ -118,5 +118,6 @@
   
   <modules>
     <module>lemon-product</module>
+    <module>lemon-zuul</module>
   </modules>
 </project>
