@@ -119,5 +119,6 @@
   <modules>
     <module>lemon-product</module>
     <module>lemon-zuul</module>
+    <module>lemon-rabbit</module>
   </modules>
 </project>
