@@ -1,0 +1,45 @@
+# Tomcat
+server:
+  port: 8080
+
+# Spring
+spring: 
+  application:
+    # 应用名称
+    name: lemon-gateway-web
+  profiles:
+    # 环境配置
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 192.168.60.201:8848
+      config:
+        # 配置中心地址
+        server-addr: 192.168.60.201:8848
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-configs:
+          - ruoyi_mysql.yml
+#          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+    sentinel:
+      # 取消控制台懒加载
+      eager: true
+      filter:
+        enabled: false #网关流控控制台上看到URL 资源
+      transport:
+        # 控制台地址
+        dashboard: 192.168.60.201:8718
+      # nacos配置持久化
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 192.168.60.201:8848
+            dataId: sentinel-gateway-web
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow

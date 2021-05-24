@@ -1,9 +1,0 @@
-#tomcat
-server:
-  port: 8085
-
-# mysql
-spring:
-    # 环境 dev|test|pro
-    profiles:
-        active: dev
