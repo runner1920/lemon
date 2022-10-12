@@ -25,7 +25,7 @@
 	<fastjson.version>1.2.73</fastjson.version>
     <pagehelper.spring.boot.version>1.2.0</pagehelper.spring.boot.version>
     <joda.time.version>2.9.9</joda.time.version>
-    <shiro.version>1.5.3</shiro.version>
+    <shiro.version>1.10.0</shiro.version>
     <jsch.version>0.1.54</jsch.version>
   </properties>
   
